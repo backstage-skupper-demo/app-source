@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Book Application</title> 
+</head>
+<body>
+    <h1>Book Store</h1>
+    <br/>
+    <h2>On Prem Database Reachable: {connectionAvailable}</h2>
+    <h2>EKS Microservice Reachable: {eksAvailable}</h2>
+    <h3>Books</h3>
+    <ul>
+        {#for book in books}
+        <li>({book.id }){book.title}</li>
+        {/for}
+    </ul>
+</body>
+</html>
