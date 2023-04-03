@@ -9,12 +9,10 @@ import javax.ws.rs.core.MediaType;
 
 @Path("/hello")
 public class GreetingResource {
-    @RestClient
-    RemoteClient remoteClient;
 
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
-        return remoteClient.getMsg();
+        return "Hello from app b";
     }
 }
